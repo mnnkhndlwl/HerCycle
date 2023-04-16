@@ -2,8 +2,10 @@ import React from "react";
 import "./community.css";
 
 function Community() {
-  const el = document.getElementById("messages");
-  el.scrollTop = el.scrollHeight;
+  if (document.getElementById("messages")) {
+    const el = document.getElementById("messages");
+    el.scrollTop = el.scrollHeight;
+  }
   return (
     <div>
       <div className="flex-1 p:2 sm:p-6 justify-between flex flex-col max-h-screen">
