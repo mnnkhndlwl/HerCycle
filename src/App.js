@@ -9,8 +9,8 @@ import Community from "./pages/Community/Community";
 import Pregnancy from "./pages/Pregnancy/Pregnancy";
 import Quiz from "./pages/Quiz/Quiz";
 import Blog from "./pages/Blog/Blog";
-import Check from "./pages/check/Check";
-import Doctors from "./pages/doctors/Doctors";
+import Check from "./pages/Check/Check";
+import Doctors from "./pages/Doctors/Doctors";
 
 function App() {
   return (
