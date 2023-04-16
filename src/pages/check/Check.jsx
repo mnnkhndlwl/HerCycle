@@ -41,7 +41,7 @@ function Check() {
     <>
       
 
-      <div className="max-w-screen-lg mx-auto mt-8">
+      <div className="max-w-screen-lg py-28 mx-auto mt-8">
         <h1 className="text-3xl font-bold mb-4">Check Your Next Period</h1>
 
         <div className="flex justify-between">

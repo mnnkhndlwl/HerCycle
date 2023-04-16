@@ -2,6 +2,8 @@ import { BrowserRouter,Routes,Route } from "react-router-dom";
 import Hero from "./sections/Hero/Hero";
 import Check from "./pages/check/Check";
 import Navbar from "./components/Navbar/Navbar";
+import Newsletter from "./sections/Newsletter/Newsletter";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
             <Route path='check' element={<Check />} />
           </Route>
         </Routes>
+        <Newsletter />
+        <Footer />
       </BrowserRouter>
     </div>
   );
