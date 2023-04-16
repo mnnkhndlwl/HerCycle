@@ -3,7 +3,7 @@ export const Info = [
         "name" : "Exercises",
         "description" : "Explore exercises on our app which will be really helpful for you in your period days",
         "image" : "./img/ex.svg",
-        "Link" : "exercise",
+        "Link" : "exercises",
     },
     {
         "name" : "Doctors",

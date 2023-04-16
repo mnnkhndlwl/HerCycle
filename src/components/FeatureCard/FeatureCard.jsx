@@ -14,7 +14,7 @@ function ExploreCard({name,description,img,link}) {
               <p className="leading-relaxed text-base">
                 {description}
               </p>
-              <div className="mt-3 text-pink-500 inline-flex items-center">
+              <Link to={link} className="mt-3 text-pink-500 inline-flex items-center">
                 Learn More
                 <svg
                   fill="none"
@@ -27,7 +27,7 @@ function ExploreCard({name,description,img,link}) {
                 >
                   <path d="M5 12h14M12 5l7 7-7 7"></path>
                 </svg>
-              </div>
+              </Link>
             </div>
           </div>
   )
