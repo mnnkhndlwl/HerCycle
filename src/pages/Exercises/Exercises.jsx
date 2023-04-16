@@ -133,7 +133,7 @@ function Exercises() {
                 Start in a standing position with your feet hip-width apart.
                 Step forward longer than a walking stride so one leg is ahead of
                 your torso and the other is behind. Your foot should land flat
-                and remain flat while it’s on the ground. Your rear heel will
+                and remain flat while it's on the ground. Your rear heel will
                 rise off of the ground. Bend your knees to approximately 90
                 degrees as you lower yourself. Remember to keep your trunk
                 upright and core engaged. Then, forcefully push off from your

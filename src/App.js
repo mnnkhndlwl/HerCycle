@@ -1,7 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Hero from "./sections/Hero/Hero";
-import Check from "./pages/Check/Check";
-import Doctors from "./pages/Doctors/Doctors";
 import Navbar from "./components/Navbar/Navbar";
 import Newsletter from "./sections/Newsletter/Newsletter";
 import Footer from "./components/Footer/Footer";
@@ -11,6 +9,8 @@ import Community from "./pages/Community/Community";
 import Pregnancy from "./pages/Pregnancy/Pregnancy";
 import Quiz from "./pages/Quiz/Quiz";
 import Blog from "./pages/Blog/Blog";
+import Check from "./pages/check/Check";
+import Doctors from "./pages/doctors/Doctors";
 
 function App() {
   return (
