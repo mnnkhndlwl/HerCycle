@@ -6,6 +6,7 @@ const Quiz = () => {
   const [showResult, setShowResult] = useState(false);
   const [disease, setDiseases] = useState([]);
   const [recommendedExercises, setRecommendedExercises] = useState("");
+  const [attempt, setAttempt] = useState(false);
 
   const questions = [
     {
@@ -138,28 +139,29 @@ const Quiz = () => {
       setCurrentQuestion(nextQuestion);
     } else {
       if (score >= 0 && score <= 3) {
-        setDiseases(["Mild symptoms", "no serious underlying conditions identified"]);
-        setRecommendedExercises(
-          "yoga, brisk walking, cycling"
-        );
+        setDiseases([
+          "Mild symptoms",
+          "no serious underlying conditions identified",
+        ]);
+        setRecommendedExercises("yoga, brisk walking, cycling");
       }
       if (score >= 4 && score <= 6) {
         setDiseases([
           " Moderate symptoms",
           "Dysmenorrhea",
           "Endometriosis",
-          "PCOS"
+          "PCOS",
         ]);
         setRecommendedExercises(
           "gentle yoga, low-impact cardio, strength training"
         );
       }
-      if (score >= 7 ) {
+      if (score >= 7) {
         setDiseases([
           "Severe symptoms",
           "premenstrual dysphoric disorder (PMDD)",
           "uterine fibroids",
-          "adenomyosis"
+          "adenomyosis",
         ]);
         setRecommendedExercises(
           "restorative yoga, Pilates, low-impact cardio, strength training with caution"
@@ -170,54 +172,105 @@ const Quiz = () => {
   };
 
   return (
-    <div className="max-w-md my-20 mx-auto">
-      {showResult ? (
+    <>
+      {!attempt ? (
         <>
-          <div className="text-center w-full h-full bg-pink-400 px-10 py-24">
-            <h1 className="text-2xl font-medium text-white">
-              Your score: {score}
-            </h1>
-            <p className="text-white mt-4 mb-8">
-              Based on your score, you may have
-            </p>
-            <ul className="list-disc list-inside mb-8">
-              {disease.map((disease) => (
-                <li key={disease} className="text-white">
-                  {disease}
-                </li>
-              ))}
-            </ul>
-            <p className="text-center text-white">
-              Recommended Exercises for you are : {" "}
-              <br/>
-              <span className="text-center text-white font-bold">{recommendedExercises}</span>
-            </p>
-          </div>
+          <section className="text-gray-600 body-font">
+            <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
+              <iframe
+                className="w-80 h-80"
+                src="https://embed.lottiefiles.com/animation/27636"
+              ></iframe>
+              <div className="text-center lg:w-2/3 w-full">
+                <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
+                  Period quiz: How much do you know about your own menstrual
+                  cycle?
+                </h1>
+                <p className="mb-8 leading-relaxed text-black text-justify">
+                  During reproductive age, the majority of women and people who
+                  menstruate have periods every month. But despite that, many of
+                  us still have big gaps in knowledge where our menstrual cycles
+                  are concerned — which is where our period quiz comes in. Take
+                  this period test and see how much you know about your own
+                  cycle. Knowledge is power, after all, and those gaps are there
+                  to be filled with some fascinating period facts!
+                  <br />
+                  <span className="text-black font-bold">
+                    This quiz is designed to help you learn more about your
+                    period and periods in general, but it is for educational
+                    purposes only. Menstrual periods can differ for every person
+                    and can often be irregular. If you're experiencing irregular
+                    periods, uncharacteristically heavy or light bleeding, or
+                    notice any other changes to your periods, contact your
+                    health care provider for advice.
+                  </span>
+                </p>
+                <div className="flex justify-center">
+                  <button
+                    onClick={() => setAttempt(true)}
+                    className="inline-flex text-white bg-pink-400 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+                  >
+                    Attempt
+                  </button>
+                </div>
+              </div>
+            </div>
+          </section>
         </>
       ) : (
         <>
-        <h1 className="text-center text-4xl text-bold text-pink-400 my-10">
-        Attempt this quiz to know about your periods 
-        </h1>
-        <div className="w-full py-20 px-10 h-full bg-pink-400">
-          <h1 className="text-2xl text-white font-bold mb-4">
-            {questions[currentQuestion].question}
-          </h1>
-          <div className="space-y-4">
-            {questions[currentQuestion].answers.map((answer, index) => (
-              <button
-                key={index}
-                className="w-full bg-gray-200 hover:bg-gray-300 text-gray-700 font-bold py-2 px-4 rounded"
-                onClick={() => handleAnswerClick(answer.score)}
-              >
-                {answer.text}
-              </button>
-            ))}
+          <div className="max-w-md my-20 mx-auto">
+            {showResult ? (
+              <>
+                <div className="text-center w-full h-full bg-pink-400 px-10 py-24">
+                  <h1 className="text-2xl font-medium text-white">
+                    Your score: {score}
+                  </h1>
+                  <p className="text-white mt-4 mb-8">
+                    Based on your score, you may have
+                  </p>
+                  <ul className="list-disc list-inside mb-8">
+                    {disease.map((disease) => (
+                      <li key={disease} className="text-white">
+                        {disease}
+                      </li>
+                    ))}
+                  </ul>
+                  <p className="text-center text-white">
+                    Recommended Exercises for you are : <br />
+                    <span className="text-center text-white font-bold">
+                      {recommendedExercises}
+                    </span>
+                  </p>
+                </div>
+              </>
+            ) : (
+              <>
+                <h1 className="text-center text-4xl text-bold text-pink-400 my-10">
+                  Attempt this quiz to know about your periods
+                </h1>
+                <div className="w-full py-20 px-10 h-full bg-pink-400">
+                  <h1 className="text-2xl text-white font-bold mb-4">
+                    {questions[currentQuestion].question}
+                  </h1>
+                  <div className="space-y-4">
+                    {questions[currentQuestion].answers.map((answer, index) => (
+                      <button
+                        key={index}
+                        className="w-full bg-gray-200 hover:bg-gray-300 text-gray-700 font-bold py-2 px-4 rounded"
+                        onClick={() => handleAnswerClick(answer.score)}
+                      >
+                        {answer.text}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              </>
+            )}
           </div>
-        </div>
         </>
       )}
-    </div>
+    </>
   );
 };
 

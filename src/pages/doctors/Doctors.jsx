@@ -22,7 +22,7 @@ function Doctors() {
             <div className="xl:w-1/3 md:w-1/2 p-4">
               <div className="bg-gray-100 p-6 rounded-lg">
                 <img
-                  className="h-40 rounded w-full object-fit object-center mb-6"
+                  className="h-40 rounded w-full object-contain object-center mb-6"
                   src="./img/doctor1.jpg"
                   alt="content"
                 />
@@ -41,7 +41,7 @@ function Doctors() {
             <div className="xl:w-1/3 md:w-1/2 p-4">
               <div className="bg-gray-100 p-6 rounded-lg">
                 <img
-                  className="h-40 rounded w-full object-fit object-center mb-6"
+                  className="h-40 rounded w-full object-contain object-center mb-6"
                   src="./img/doctor2.jpg"
                   alt="content"
                 />
@@ -60,7 +60,7 @@ function Doctors() {
             <div className="xl:w-1/3 md:w-1/2 p-4">
               <div className="bg-gray-100 p-6 rounded-lg">
                 <img
-                  className="h-40 rounded w-full object-fit mb-6"
+                  className="h-40 rounded w-full object-contain object-center mb-6"
                   src="./img/doctor3.jpg"
                   alt="content"
                 />
@@ -79,7 +79,7 @@ function Doctors() {
           </div>
         </div>
       </section>
-      <div className="p-6 bg-pink-400"></div>
+      <div className="p-6"></div>
       <section class="text-gray-600 body-font relative">
         <div class="absolute inset-0 bg-gray-300">
           <iframe
