@@ -1,6 +1,7 @@
-import { BrowserRouter,Routes,Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Hero from "./sections/Hero/Hero";
 import Check from "./pages/check/Check";
+import Doctors from "./pages/doctors/Doctors";
 import Navbar from "./components/Navbar/Navbar";
 import Newsletter from "./sections/Newsletter/Newsletter";
 import Footer from "./components/Footer/Footer";
@@ -10,12 +11,13 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-      <Navbar />
+        <Navbar />
         <Routes>
-          <Route path='/' >
+          <Route path="/">
             <Route index element={<Hero />} />
-            <Route path='check' element={<Check />} />
-            <Route path='exercises' element={<Exercises />} />
+            <Route path="check" element={<Check />} />
+            <Route path="exercises" element={<Exercises />} />
+            <Route path="doctors" element={<Doctors />} />
           </Route>
         </Routes>
         <Newsletter />
