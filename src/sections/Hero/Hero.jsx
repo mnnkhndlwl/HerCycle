@@ -1,13 +1,13 @@
 import React from "react";
-import Navbar from "../../components/Navbar/Navbar";
 import Facts from "../Facts/Facts";
 import Features from "../Features/Features";
 import { Link } from "react-router-dom";
+import Faq from "../FAQ/Faq";
 
 function Hero() {
   return (
     <div>
-      <Navbar />
+      
       <section className="text-gray-600 bg-white body-font">
         <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
           <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
@@ -70,8 +70,9 @@ function Hero() {
           </div>
         </div>
       </section>
-      <Facts />
       <Features />
+      <Facts />
+      <Faq />
     </div>
   );
 }
