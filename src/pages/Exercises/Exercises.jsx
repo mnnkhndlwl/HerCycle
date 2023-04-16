@@ -8,6 +8,7 @@ function Exercises() {
           <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
             Exercises
           </h1>
+          <div className="h-2 w-20 bg-pink-500 rounded"></div>
           <p class="lg:w-1/2 w-full leading-relaxed text-gray-500">
             it's important to choose exercises that are gentle and low-impact
             during the menstrual cycle, as the body may be more sensitive during
