@@ -11,6 +11,7 @@ import Quiz from "./pages/Quiz/Quiz";
 import Blog from "./pages/Blog/Blog";
 import Check from "./pages/Check/Check";
 import Doctors from "./pages/Doctors/Doctors";
+import Login from "./pages/Auth/Login";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
             <Route path="community" element={<Community />} />
             <Route path="pregnancy" element={<Pregnancy />} />
             <Route path="quiz" element={<Quiz />} />
+            <Route path="login" element={<Login />} />
             <Route path="blog" element={<Blog />} />
           </Route>
         </Routes>

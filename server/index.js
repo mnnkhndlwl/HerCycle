@@ -1,8 +1,9 @@
 import express, { application } from "express";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
-import cookieParser from "cookie-parser";
+// import cookieParser from "cookie-parser";
 import cors from "cors";
+import authRoutes from "./routes/auth.js"
 const app = express();
 
 dotenv.config();
@@ -24,8 +25,9 @@ const connect = async () => {
 };
 
 //middlewares
-app.use(cookieParser());
+// app.use(cookieParser());
 app.use(express.json());
+app.use("/api/auth", authRoutes);
 
 //error handler - to give error messages so that we don't have to implement catch error for every request
 app.use((err, req, res, next) => {
