@@ -7,6 +7,10 @@ import Newsletter from "./sections/Newsletter/Newsletter";
 import Footer from "./components/Footer/Footer";
 import Exercises from "./pages/Exercises/Exercises";
 import Health from "./pages/Health/Health";
+import Community from "./pages/Community/Community";
+import Pregnancy from "./pages/Pregnancy/Pregnancy";
+import Quiz from "./pages/Quiz/Quiz";
+import Blog from "./pages/Blog/Blog";
 
 function App() {
   return (
@@ -20,6 +24,10 @@ function App() {
             <Route path="exercises" element={<Exercises />} />
             <Route path="doctors" element={<Doctors />} />
             <Route path="health" element={<Health />} />
+            <Route path="community" element={<Community />} />
+            <Route path="pregnancy" element={<Pregnancy />} />
+            <Route path="quiz" element={<Quiz />} />
+            <Route path="blog" element={<Blog />} />
           </Route>
         </Routes>
         <Newsletter />
