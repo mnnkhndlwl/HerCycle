@@ -30,10 +30,14 @@ function Check() {
   const calendarTileContent = ({ date, view }) => {
     if (view === 'month') {
       if (date.toDateString() === nextPeriodDate.toDateString()) {
-        return <div className="bg-red-500 rounded-full h-6 w-6 mx-auto"></div>;
-      } else if (date > nextPeriodDate && date < new Date(nextPeriodDate.getTime() + (cycleLength * 24 * 60 * 60 * 1000))) {
-        return <div className="bg-gray-300 rounded-full h-6 w-6 mx-auto"></div>;
+        return <div className="bg-red-500 rounded-full h-6 w-6 mx-auto"></div>; 
       }
+      else if (date >= nextPeriodDate && date <= new Date(nextPeriodDate.getTime() + ((periodLength - 1) * 24 * 60 * 60 * 1000))) {
+        return <div className="bg-red-500 rounded-full h-6 w-6 mx-auto"></div>;
+      }
+      //  else if (date > nextPeriodDate && date < new Date(nextPeriodDate.getTime() + (cycleLength * 24 * 60 * 60 * 1000))) {
+      //   return <div className="bg-gray-300 rounded-full h-6 w-6 mx-auto"></div>;
+      // }
     }
   };
 
