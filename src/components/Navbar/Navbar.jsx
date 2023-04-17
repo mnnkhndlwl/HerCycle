@@ -26,7 +26,7 @@ function Navbar() {
           to="/"
           className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
         >
-          <img src="./img/logog.svg" className="w-11 h-11 text-white"></img>
+          <img src="./img/logog.svg" className="w-11 h-11 text-white" alt="" />
           <span className="ml-3 text-xl text-white">HerCycle</span>
         </Link>
         <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-white	flex flex-wrap items-center text-base justify-center">
