@@ -3,6 +3,10 @@ import { Calendar } from "react-calendar";
 import "react-calendar/dist/Calendar.css";
 
 function Check() {
+  const openInNewTab = (url) => {
+    window.open(url, '_blank', 'noreferrer');
+  };
+
   var [selectedDate, setSelectedDate] = useState(new Date());
   var [cycleLength, setCycleLength] = useState(28);
   var [periodLength, setPeriodLength] = useState(5);
@@ -81,11 +85,13 @@ function Check() {
               className="w-full p-2 rounded border border-gray-400 mb-4"
             />
 
-            <button className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded">
+            <button className="bg-red-500 hover:bg-blue-600 text-white py-2 px-4 rounded">
               Check
             </button>
+            <button onClick={() => openInNewTab('https://her-cycle.onrender.com')} className="ml-10 inline-flex text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-pink-600 rounded text-lg">
+                  Predict Normality
+              </button>
           </div>
-
           <div className="w-1/2 pl-4">
             <label className="block font-medium mb-2">
               Select the first day of your last period

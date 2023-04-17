@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import Faq from "../FAQ/Faq";
 
 function Hero() {
+  
   return (
     <div>
       <section className="text-gray-600 bg-white body-font">
@@ -29,6 +30,9 @@ function Hero() {
                   Track your cycle
                 </button>
               </Link>
+              {/* <button onClick={() => openInNewTab('https://her-cycle.onrender.com')} className="ml-10 inline-flex text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-pink-600 rounded text-lg">
+                  Predict 
+                </button> */}
             </div>
             <p className="text-sm mt-2 text-black mb-8 w-full">
               Start tracking your menstrual cycle now and improve your health!
