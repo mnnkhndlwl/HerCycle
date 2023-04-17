@@ -31,7 +31,7 @@ function Community() {
   const handleCommunity = async () => {
     try {
       await userRequest.post(`/api/community/`, {
-        desc: newCommunity,
+        desc: currentUser.isDoctor ? "Dr " + currentUser.name + " : " + newCommunity : newCommunity,
       });
       fetchCommunity();
       setNewCommunity("");
@@ -52,7 +52,7 @@ function Community() {
           className="flex flex-col space-y-4 p-3 overflow-y-auto scrollbar-thumb-blue scrollbar-thumb-rounded scrollbar-track-blue-lighter scrollbar-w-2 scrolling-touch"
         >
           {community.map((chat) => {
-            if (chat.userId !== currentUser._id) {
+           if (chat.userId !== currentUser._id) {
               return <div className="chat-message">
                 <div className="flex items-end">
                   <div className="flex flex-col space-y-2 text-xs max-w-xs mx-2 order-2 items-start">
