@@ -14,6 +14,7 @@ import Doctors from "./pages/Doctors/Doctors";
 import Login from "./pages/Auth/Login";
 import Signup from "./pages/Auth/Signup";
 import ChatComponent from "./components/ChatBot/ChatBot";
+import Profile from "./pages/Profile/Profile";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
             <Route path="login" element={<Login />} />
             <Route path="signup" element={<Signup />} />
             <Route path="blog" element={<Blog />} />
+            <Route path="profile" element={<Profile />} />
           </Route>
         </Routes>
         <Newsletter />
