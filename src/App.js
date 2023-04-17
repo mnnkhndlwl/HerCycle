@@ -13,6 +13,7 @@ import Check from "./pages/Check/Check";
 import Doctors from "./pages/Doctors/Doctors";
 import Login from "./pages/Auth/Login";
 import Signup from "./pages/Auth/Signup";
+import ChatComponent from "./components/ChatBot/ChatBot";
 
 function App() {
   return (

@@ -21,7 +21,7 @@ function Navbar() {
 
   return (
     <header className="text-white bg-pink-400 body-font">
-      <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <div className="container text-white mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
         <Link
           to="/"
           className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
