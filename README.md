@@ -8,20 +8,20 @@
 
 <div align="center">
 
-![GitHub stars](https://img.shields.io/github/stars/mnnkhndlwl/mern_youtube_clone?)
-![GitHub forks](https://img.shields.io/github/forks/mnnkhndlwl/mern_youtube_clone?)
-![GitHub watchers](https://img.shields.io/github/watchers/mnnkhndlwl/mern_youtube_clone?)
-![Repo. Size](https://img.shields.io/github/repo-size/mnnkhndlwl/mern_youtube_clone?)
+![GitHub stars](https://img.shields.io/github/stars/keshav39/HerCycle?)
+![GitHub forks](https://img.shields.io/github/forks/keshav39/HerCycle?)
+![GitHub watchers](https://img.shields.io/github/watchers/keshav39/HerCycle?)
+![Repo. Size](https://img.shields.io/github/repo-size/keshav39/HerCycle?)
 ![GitHub Maintained](https://img.shields.io/badge/Maintained%3F-yes-brightgreen.svg?)
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?)
     
-![GitHub contributors](https://img.shields.io/github/contributors/mnnkhndlwl/mern_youtube_clone?)
-![GitHub Closed issues](https://img.shields.io/github/issues-closed-raw/mnnkhndlwl/mern_youtube_clone?)
-![GitHub PR Open](https://img.shields.io/github/issues-pr/mnnkhndlwl/mern_youtube_clone?)
-![GitHub PR closed](https://img.shields.io/github/issues-pr-closed-raw/mnnkhndlwl/mern_youtube_clone?)
-![GitHub language count](https://img.shields.io/github/languages/count/mnnkhndlwl/mern_youtube_clone?)
-![GitHub top language](https://img.shields.io/github/languages/top/mnnkhndlwl/mern_youtube_clone?)
-![GitHub last commit](https://img.shields.io/github/last-commit/mnnkhndlwl/mern_youtube_clone?)
+![GitHub contributors](https://img.shields.io/github/contributors/keshav39/HerCycle?)
+![GitHub Closed issues](https://img.shields.io/github/issues-closed-raw/keshav39/HerCycle?)
+![GitHub PR Open](https://img.shields.io/github/issues-pr/keshav39/HerCycle?)
+![GitHub PR closed](https://img.shields.io/github/issues-pr-closed-raw/keshav39/HerCycle?)
+![GitHub language count](https://img.shields.io/github/languages/count/keshav39/HerCycle?)
+![GitHub top language](https://img.shields.io/github/languages/top/keshav39/HerCycle?)
+![GitHub last commit](https://img.shields.io/github/last-commit/keshav39/HerCycle?)
    
 
 </div>
@@ -66,25 +66,6 @@ Read more about it <a href="https://www.digitalocean.com/community/tutorial_seri
   
  <p align="right">(<a href="#top">back to top</a>)</p>
 
-<!-- -------------------------------------------------------------------------------------------------------------------------------------------------- -->
-
-## Open Source programs this repo has been part of
-<a href="https://github.com/mnnkhndlwl/mern_youtube_clone"><img src="https://badges.frapsoft.com/os/v2/open-source.svg?v=103"></a>
-
-
-<div align="center">
-<img src="https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/v1/gcs/platform-data-dsc/events/JWOC%20Logo%20Final.png" width="150px">
-</div>
-
-<div align="center">
-    <a href="https://jwoc.tech/">JGEC Winter of Code</a>
-
-</div>
-<br>
-
-<br>
-
-<p align="right">(<a href="#top">back to top</a>)</p>
 <!--  .............................................................................................................................................-->
 <!-- ABOUT THE PROJECT -->
 
@@ -99,8 +80,6 @@ Read more about it <a href="https://www.digitalocean.com/community/tutorial_seri
 
   ![Javascript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
   ![React](https://img.shields.io/badge/React-323330?style=for-the-badge&logo=react&logoColor=F7DF1E)
-  ![MaterialUI](https://img.shields.io/badge/Material--UI-0081CB?style=for-the-badge&logo=material-ui&logoColor=F7DF1E)
-  ![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase)
   ![NPM](https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white) 
   ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) 
   ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) 
