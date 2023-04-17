@@ -21,7 +21,7 @@ function Pregnancy() {
         <section class="text-gray-600 body-font">
           <div class="container px-5 py-6 mt-10 mx-auto flex flex-wrap">
             <div class="flex flex-wrap -m-4 mx-auto">
-              <div class="p-4 lg:w-1/2 md:w-full mx-full">
+              <div class="p-4 lg:w-1/2 md:w-full sm:w-full">
                 <div class="flex border-2 rounded-lg border-gray-300 border-opacity-50 p-8 sm:flex-row flex-col p-1/2 py-14">
                   <div class="w-16 h-16 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full flex-shrink-0">
                     <img
@@ -57,7 +57,7 @@ function Pregnancy() {
                   </div>
                 </div>
               </div>
-              <div class="p-4 lg:w-1/2 md:w-full mx-full">
+              <div class="p-4 lg:w-1/2 md:w-full sm:w-full">
                 <div class="flex border-2 rounded-lg border-gray-300 border-opacity-50 p-8 sm:flex-row flex-col p-1/2 py-11">
                   <div class="w-16 h-16 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-ful flex-shrink-0">
                     <img
@@ -98,7 +98,7 @@ function Pregnancy() {
           </div>
           <div class="container px-5 py-6 mx-auto flex flex-wrap">
             <div class="flex flex-wrap -m-4 mx-auto">
-              <div class="p-4 lg:w-1/2 md:w-full mx-full">
+              <div class="p-4 lg:w-1/2 md:w-full sm:w-full">
                 <div class="flex border-2 rounded-lg border-gray-300 border-opacity-50 p-8 sm:flex-row flex-col p-1/2 py-11">
                   <div class="w-16 h-16 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full flex-shrink-0">
                     <img
@@ -135,7 +135,7 @@ function Pregnancy() {
                   </div>
                 </div>
               </div>
-              <div class="p-4 lg:w-1/2 md:w-full mx-full">
+              <div class="p-4 lg:w-1/2 md:w-full sm:w-full">
                 <div class="flex border-2 rounded-lg border-gray-300 border-opacity-50 p-8 sm:flex-row flex-col p-1/2 py-14">
                   <div class="w-16 h-16 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full flex-shrink-0">
                     <img
@@ -180,7 +180,7 @@ function Pregnancy() {
         <section class="text-gray-600 body-font">
           <div class="container px-5 py-6 mx-auto flex flex-wrap">
             <div class="flex flex-wrap -m-4 mx-auto">
-              <div class="p-4 lg:w-1/2 md:w-full">
+              <div class="p-4 lg:w-1/2 md:w-full sm:w-full">
                 <div class="flex border-2 rounded-lg border-gray-300 border-opacity-50 p-8 sm:flex-row flex-col py-11">
                   <div class="w-16 h-16 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full flex-shrink-0">
                     <img
@@ -217,7 +217,7 @@ function Pregnancy() {
                   </div>
                 </div>
               </div>
-              <div class="p-4 lg:w-1/2 md:w-full">
+              <div class="p-4 lg:w-1/2 md:w-full sm:w-full">
                 <div class="flex border-2 rounded-lg border-gray-300 border-opacity-50 p-8 sm:flex-row flex-col py-14">
                   <div class="w-16 h-16 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full flex-shrink-0">
                     <img
@@ -258,7 +258,7 @@ function Pregnancy() {
           </div>
           <div class="container px-5 py-6 mx-auto flex flex-wrap">
             <div class="flex flex-wrap -m-4 mx-auto">
-              <div class="p-4 lg:w-1/2 md:w-full">
+              <div class="p-4 lg:w-1/2 md:w-full sm:w-full">
                 <div class="flex border-2 rounded-lg border-gray-200 border-opacity-50 p-8 sm:flex-row flex-col py-11">
                   <div class="w-16 h-16 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full flex-shrink-0">
                     <img
@@ -295,7 +295,7 @@ function Pregnancy() {
                   </div>
                 </div>
               </div>
-              <div class="p-4 lg:w-1/2 md:w-full">
+              <div class="p-4 lg:w-1/2 md:w-full sm:w-full">
                 <div class="flex border-2 rounded-lg border-gray-200 border-opacity-50 p-8 sm:flex-row flex-col">
                   <div class="w-16 h-16 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full flex-shrink-0">
                     <img

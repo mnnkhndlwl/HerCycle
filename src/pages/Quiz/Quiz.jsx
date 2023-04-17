@@ -222,7 +222,7 @@ const Quiz = () => {
           <div className="max-w-md my-20 mx-auto">
             {showResult ? (
               <>
-                <div className="text-center w-full h-full bg-pink-400 px-10 pt-24">
+                <div className="text-center w-full h-full bg-pink-400 px-10 pt-14">
                   <h1 className="text-2xl font-medium text-white">
                     Your score: {score}
                   </h1>
