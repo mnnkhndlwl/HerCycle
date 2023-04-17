@@ -12,6 +12,7 @@ import Blog from "./pages/Blog/Blog";
 import Check from "./pages/Check/Check";
 import Doctors from "./pages/Doctors/Doctors";
 import Login from "./pages/Auth/Login";
+import Signup from "./pages/Auth/Signup";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
             <Route path="pregnancy" element={<Pregnancy />} />
             <Route path="quiz" element={<Quiz />} />
             <Route path="login" element={<Login />} />
+            <Route path="signup" element={<Signup />} />
             <Route path="blog" element={<Blog />} />
           </Route>
         </Routes>

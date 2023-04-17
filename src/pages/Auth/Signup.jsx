@@ -1,34 +1,31 @@
 import React, { useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { loginFailure, loginStart, loginSuccess } from "../../redux/userSlice";
+import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { publicRequest } from "../../config";
 import LoadingSpinner from "../../utils/Spinner";
 import { Link } from "react-router-dom";
 
-function Login() {
+function Signup() {
   const { loading } = useSelector((state) => state.user);
   const [name, setName] = useState("");
+  const [email,setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const dispatch = useDispatch();
   const navigate = useNavigate();
   const [error, setError] = useState("");
 
   const handleLogin = async (e) => {
     e.preventDefault();
-    dispatch(loginStart());
     try {
-      const res = await publicRequest.post("/api/auth/signin", {
+      const res = await publicRequest.post("/api/auth/signup", {
+        email,
         name,
         password,
       });
-      dispatch(loginSuccess(res.data));
-      navigate("/");
+      navigate("/login");
       window.location.reload();
     } catch (error) {
       console.log(error.response["data"]);
       setError(error.response["data"]["message"]);
-      dispatch(loginFailure());
     }
   };
 
@@ -60,6 +57,19 @@ function Login() {
                     Sign in to your account
                   </h1>
                   <form className="space-y-4 md:space-y-6" action="#">
+                  <div>
+                      <label className="block mb-2 text-sm font-medium text-white">
+                        email
+                      </label>
+                      <input
+                        name="email"
+                        type="email"
+                        className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 "
+                        placeholder="email"
+                        onChange={(e) => setEmail(e.target.value)}
+                        required=""
+                      />
+                    </div>
                     <div>
                       <label className="block mb-2 text-sm font-medium text-white">
                         username
@@ -100,29 +110,29 @@ function Login() {
                             required=""
                           />
                         </div>
-                        <div className="ml-3 text-sm">
+                        {/* <div className="ml-3 text-sm">
                           <label for="remember" className="text-white">
                             Remember me
-                          </label>
-                        </div>
+                          </label> 
+                        </div> */}
                       </div>
-                      <p className="text-sm font-medium text-white hover:underline">
+                      {/* <p className="text-sm font-medium text-white hover:underline">
                         Forgot password?
-                      </p>
+                      </p> */}
                     </div>
                     <button
                       onClick={handleLogin}
                       className="w-full text-white bg-red-500 hover:bg-red-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center "
                     >
-                      Sign in
+                      Signup
                     </button>
                     <p className="text-xl font-light text-white">
-                      Don't have an account yet?{" "}
+                      Already have an account?{" "}
                       <Link
-                        to="/signup"
+                        to="/login"
                         className="font-medium text-primary-600 hover:underline dark:text-primary-500"
                       >
-                        Sign up
+                        Login
                       </Link>
                     </p>
                   </form>
@@ -136,4 +146,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default Signup;
