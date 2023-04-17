@@ -88,7 +88,7 @@ function Check() {
             <button className="bg-red-500 hover:bg-blue-600 text-white py-2 px-4 rounded">
               Check
             </button>
-            <button onClick={() => openInNewTab('https://her-cycle.onrender.com')} className="ml-10 inline-flex text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-pink-600 rounded text-lg">
+            <button onClick={() => openInNewTab('https://hercycleqwerty.onrender.com/')} className="ml-10 inline-flex text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-pink-600 rounded text-lg">
                   Predict Normality
               </button>
           </div>
