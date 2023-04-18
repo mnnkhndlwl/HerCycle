@@ -1,6 +1,10 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
 function Profile() {
+
+  const { currentUser } = useSelector((state) => state.user);
+
   return (
     <section>
       <div class="p-16">
@@ -26,10 +30,9 @@ function Profile() {
           </div>
           <div class="mt-20 text-center border-b pb-12">
             <h1 class="text-4xl font-medium mt-24 text-gray-700 pt-6">
-              Jessica Jones, <span class="font-light text-gray-500">27</span>
+              {currentUser.name} 
             </h1>
-            <p class="font-light text-gray-600 mt-3">Bucharest, Romania</p>
-            <p class="mt-8 text-gray-500">randomemail@email.com</p>
+            <p class="mt-8 text-gray-500">{currentUser.email}</p>
           </div>
           <div class="mt-12 flex flex-col justify-center">
             <p class="text-gray-600 text-center font-light lg:px-16">
