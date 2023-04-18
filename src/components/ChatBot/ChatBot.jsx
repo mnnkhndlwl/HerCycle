@@ -61,7 +61,7 @@ function ChatComponent() {
     <>
       {show ? (
         <>
-          <div className="flex bg-pink-400 flex-col p-10 bottom-0 right-0 z-50 fixed items-center justify-center">
+          <div className="flex bg-pink-400 flex-col p-10 bottom-2 right-8 md:w-1/4 z-50 fixed items-center justify-center rounded-3xl sm:w-1/2">
           <button
               onClick={() => setShow(true)}
               className="text-white font-bold py-2 px-4 rounded-full"
@@ -86,7 +86,7 @@ function ChatComponent() {
               )}
               {/* {messageList} */}
             </div>
-            <div className="flex mt-4">
+            <div className="flex mt-4 w-full">
               <input
                 onChange={(e) => setPrompt(e.target.value)}
                 type="text"
