@@ -2,11 +2,13 @@ import React, { useState,useEffect } from "react";
 import "./community.css";
 import { useSelector } from "react-redux";
 import { userRequest, publicRequest } from "../../config";
+import { useNavigate } from "react-router-dom";
 
 function Community() {
   const [community, setCommunity] = useState([]);
   const { currentUser } = useSelector((state) => state.user);
   const [newCommunity, setNewCommunity] = useState("");
+  const navigate = useNavigate();
 
   useEffect(() => {
     const fetchCommunity = async () => {
@@ -44,6 +46,14 @@ function Community() {
     const el = document.getElementById("messages");
     el.scrollTop = el.scrollHeight;
   }
+
+  if(currentUser === null) {
+    window.alert("Please login first");
+    return <div>
+      Please login to join our community
+    </div>
+  }
+
   return (
     <div>
       <div className="flex-1 p:2 sm:p-6 justify-between flex flex-col max-h-screen">
