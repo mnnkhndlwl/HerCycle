@@ -62,14 +62,11 @@ function ChatComponent() {
       {show ? (
         <>
           <div className="flex bg-pink-400 flex-col p-10 bottom-2 right-8 md:w-1/4 z-50 fixed items-center justify-center rounded-3xl sm:w-1/2">
-          <button
+            <button
               onClick={() => setShow(true)}
               className="text-white font-bold py-2 px-4 rounded-full"
             >
-               <img
-                src="./img/chat.png"
-                className="h-10 w-10"
-              />
+              <img src="./img/chat.png" className="h-10 w-10" alt="" />
             </button>
             <div className=" text-white p-4 rounded-lg">
               {prompt === "" ? (
@@ -104,10 +101,7 @@ function ChatComponent() {
               onClick={() => setShow(false)}
               className="text-white font-bold py-2 px-4 rounded-full"
             >
-              <img
-                src="./img/close.svg"
-                className="h-10 w-10"
-              />
+              <img src="./img/close.svg" alt="" className="h-10 w-10" />
             </button>
           </div>
         </>
@@ -118,10 +112,7 @@ function ChatComponent() {
               onClick={() => setShow(true)}
               className="bg-pink-500 hover:bg-pink-500 text-white font-bold py-2 px-4 rounded-full"
             >
-               <img
-                src="./img/chat.png"
-                className="h-10 w-10"
-              />
+              <img src="./img/chat.png" className="h-10 w-10" alt="" />
             </button>
           </div>
         </>
