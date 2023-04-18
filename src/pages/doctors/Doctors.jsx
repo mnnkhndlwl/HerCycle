@@ -1,6 +1,19 @@
-import React from "react";
+import React,{useState} from "react";
+import StripeCheckout from "react-stripe-checkout";
+import { useSelector } from "react-redux";
 
 function Doctors() {
+
+  const [stripeToken, setStripeToken] = useState(null);
+  const KEY = process.env.REACT_APP_STRIPE;
+  console.log(KEY);
+
+  const { currentUser } = useSelector((state) => state.user);
+
+  const onToken = (token) => {
+    setStripeToken(token);
+  };
+
   return (
     <div className="mx-auto">
       <section className="text-gray-600 body-font">
@@ -63,10 +76,24 @@ function Doctors() {
                     </p>
                   </div>
                 </div>
-                <div className="mt-5">
+                <div className="mt-5 flex justify-center">
+                {
+                  currentUser === null ? <>
+                  <p> Please login first to consult with our doctors </p>
+                  </> :
+                <StripeCheckout
+                    name="Please complete your payment"
+                    currency="inr"
+                    description={`Your total is 0`}
+                    amount={0 * 100}
+                    token={onToken}
+                    stripeKey={KEY}
+                  >
                   <button class="w-full bg-transparent hover:bg-pink-500 text-pink-700 font-semibold hover:text-white py-2 px-4 border border-pink-500 hover:border-transparent rounded">
-                    Chat
+                    Consult
                   </button>
+                  </StripeCheckout>
+                }
                 </div>
               </div>
             </div>
@@ -94,7 +121,7 @@ function Doctors() {
                     Consultation Fee:
                   </p>
                   <p className="leading-relaxed text-base mt-3 font-medium text-gray-500">
-                    ₹5500
+                    ₹5000
                   </p>
                   <div class="flex items-center mt-3">
                     <svg
@@ -113,10 +140,24 @@ function Doctors() {
                     </p>
                   </div>
                 </div>
-                <div className="mt-5">
+                <div className="mt-5 flex justify-center">
+                {
+                  currentUser === null ? <>
+                  <p> Please login first to consult with our doctors </p>
+                  </> :
+                <StripeCheckout
+                    name="Please complete your payment"
+                    currency="inr"
+                    description={`Your total is 0`}
+                    amount={0 * 100}
+                    token={onToken}
+                    stripeKey={KEY}
+                  >
                   <button class="w-full bg-transparent hover:bg-pink-500 text-pink-700 font-semibold hover:text-white py-2 px-4 border border-pink-500 hover:border-transparent rounded">
-                    Chat
+                    Consult
                   </button>
+                  </StripeCheckout>
+                }
                 </div>
               </div>
             </div>
@@ -163,10 +204,24 @@ function Doctors() {
                     </p>
                   </div>
                 </div>
-                <div className="mt-5">
+                <div className="mt-5 flex justify-center">
+                {
+                  currentUser === null ? <>
+                  <p> Please login first to consult with our doctors </p>
+                  </> :
+                <StripeCheckout
+                    name="Please complete your payment"
+                    currency="inr"
+                    description={`Your total is 0`}
+                    amount={0 * 100}
+                    token={onToken}
+                    stripeKey={KEY}
+                  >
                   <button class="w-full bg-transparent hover:bg-pink-500 text-pink-700 font-semibold hover:text-white py-2 px-4 border border-pink-500 hover:border-transparent rounded">
-                    Chat
+                    Consult
                   </button>
+                  </StripeCheckout>
+                }
                 </div>
               </div>
             </div>
