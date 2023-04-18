@@ -89,7 +89,7 @@ function Check() {
               Check
             </button>
             <button onClick={() => openInNewTab('https://hercycleqwerty.onrender.com/')} className="ml-10 inline-flex text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-pink-600 rounded text-lg">
-                  Predict Normality
+                  Predict Cycle
               </button>
           </div>
           <div className="w-1/2 pl-4">
